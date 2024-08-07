@@ -11,6 +11,13 @@
 		04A97C6B2C63E80900BBDB0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C6A2C63E80900BBDB0B /* ContentView.swift */; };
 		04A97C6D2C63E80C00BBDB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A97C6C2C63E80C00BBDB0B /* Assets.xcassets */; };
 		04A97C702C63E80C00BBDB0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A97C6F2C63E80C00BBDB0B /* Preview Assets.xcassets */; };
+		04A97C792C63E86400BBDB0B /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C782C63E86400BBDB0B /* Activity.swift */; };
+		04A97C7B2C63E89900BBDB0B /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C7A2C63E89900BBDB0B /* WeekCalendarView.swift */; };
+		04A97C7D2C63E8B000BBDB0B /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C7C2C63E8B000BBDB0B /* DateButton.swift */; };
+		04A97C7F2C63E8C100BBDB0B /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C7E2C63E8C100BBDB0B /* ActivityRow.swift */; };
+		04A97C812C63E8D300BBDB0B /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C802C63E8D300BBDB0B /* AddActivityView.swift */; };
+		04A97C832C63E8E300BBDB0B /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C822C63E8E300BBDB0B /* ActivityDetailView.swift */; };
+		04A97C852C63E9E900BBDB0B /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A97C842C63E9E900BBDB0B /* ActivityStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		04A97C6A2C63E80900BBDB0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A97C6C2C63E80C00BBDB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A97C6F2C63E80C00BBDB0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04A97C782C63E86400BBDB0B /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		04A97C7A2C63E89900BBDB0B /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
+		04A97C7C2C63E8B000BBDB0B /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		04A97C7E2C63E8C100BBDB0B /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
+		04A97C802C63E8D300BBDB0B /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		04A97C822C63E8E300BBDB0B /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
+		04A97C842C63E9E900BBDB0B /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,13 @@
 			children = (
 				04A97C682C63E80900BBDB0B /* DoTaskApp.swift */,
 				04A97C6A2C63E80900BBDB0B /* ContentView.swift */,
+				04A97C842C63E9E900BBDB0B /* ActivityStore.swift */,
+				04A97C782C63E86400BBDB0B /* Activity.swift */,
+				04A97C7A2C63E89900BBDB0B /* WeekCalendarView.swift */,
+				04A97C7C2C63E8B000BBDB0B /* DateButton.swift */,
+				04A97C7E2C63E8C100BBDB0B /* ActivityRow.swift */,
+				04A97C802C63E8D300BBDB0B /* AddActivityView.swift */,
+				04A97C822C63E8E300BBDB0B /* ActivityDetailView.swift */,
 				04A97C6C2C63E80C00BBDB0B /* Assets.xcassets */,
 				04A97C6E2C63E80C00BBDB0B /* Preview Content */,
 			);
@@ -138,7 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A97C6B2C63E80900BBDB0B /* ContentView.swift in Sources */,
+				04A97C812C63E8D300BBDB0B /* AddActivityView.swift in Sources */,
 				04A97C692C63E80900BBDB0B /* DoTaskApp.swift in Sources */,
+				04A97C7F2C63E8C100BBDB0B /* ActivityRow.swift in Sources */,
+				04A97C7B2C63E89900BBDB0B /* WeekCalendarView.swift in Sources */,
+				04A97C792C63E86400BBDB0B /* Activity.swift in Sources */,
+				04A97C7D2C63E8B000BBDB0B /* DateButton.swift in Sources */,
+				04A97C832C63E8E300BBDB0B /* ActivityDetailView.swift in Sources */,
+				04A97C852C63E9E900BBDB0B /* ActivityStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
