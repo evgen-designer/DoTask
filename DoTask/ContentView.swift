@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var activityStore = ActivityStore()
     @State private var showingAddActivity = false
     @State private var selectedDate = Date()
+    @State private var showingDatePicker = false
     
     var body: some View {
         NavigationView {
@@ -35,8 +36,22 @@ struct ContentView: View {
                 }
                 .listStyle(InsetGroupedListStyle())
             }
-            .navigationTitle("Habits")
+            .navigationTitle(formattedMonthAndYear())
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Button(action: {
+                        showingDatePicker.toggle()
+                    }) {
+                        Text(formattedMonthAndYear())
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                    }
+                }
+            }
+            .sheet(isPresented: $showingDatePicker) {
+                DatePickerView(selectedDate: $selectedDate)
+            }
             .overlay(
                 Button(action: {
                     showingAddActivity = true
@@ -70,6 +85,12 @@ struct ContentView: View {
     func deleteActivity(at offsets: IndexSet) {
         activityStore.activities.remove(atOffsets: offsets)
         activityStore.save()
+    }
+    
+    private func formattedMonthAndYear() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.string(from: selectedDate)
     }
 }
 
