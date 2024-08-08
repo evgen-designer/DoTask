@@ -36,6 +36,7 @@ struct ContentView: View {
                 .listStyle(InsetGroupedListStyle())
             }
             .navigationTitle("Habits")
+            .navigationBarTitleDisplayMode(.inline)
             .overlay(
                 Button(action: {
                     showingAddActivity = true

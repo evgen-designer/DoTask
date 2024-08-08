@@ -17,7 +17,7 @@ struct ActivityDetailView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Activity name", text: $activity.name)
+                TextField("Task name", text: $activity.name)
                 
                 DatePicker("Date", selection: $date, displayedComponents: .date)
                 
@@ -25,7 +25,7 @@ struct ActivityDetailView: View {
                     TextEditor(text: $description)
                 }
             }
-            .navigationTitle("Edit Activity")
+            .navigationTitle("Edit task")
             .navigationBarItems(
                 leading: Button("Cancel") {
                     dismiss()

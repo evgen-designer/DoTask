@@ -16,9 +16,9 @@ struct AddActivityView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Activity name", text: $name)
+                TextField("Task name", text: $name)
             }
-            .navigationTitle("Add Activity")
+            .navigationTitle("Add task")
             .navigationBarItems(
                 leading: Button("Cancel") {
                     dismiss()

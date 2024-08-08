@@ -46,7 +46,7 @@ struct ActivityRow: View {
             Button {
                 copyActivity()
             } label: {
-                Label("Copy", systemImage: "doc.on.doc")
+                Label("Dublicate", systemImage: "doc.on.doc")
             }
             .tint(.blue)
         }
